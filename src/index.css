@@ -5,8 +5,21 @@
 /* variables */
 :root {
   --company-blue: #0f4a7b;
+  --company-red: #ea5566;
 }
 
 .company-blue-bg {
   background-color: var(--company-blue);
+}
+.company-blue-text {
+  color: var(--company-blue);
+}
+.company-red-bg {
+  background-color: var(--company-red);
+}
+.company-red-border {
+  border-color: var(--company-red);
+}
+body {
+  background-color: #e5e5e5;
 }
