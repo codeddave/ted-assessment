@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/icons/logo.svg";
+
 const Navbar = () => {
   return (
     <div className="pt-6">
       <nav className="flex justify-between text-white ">
         <div className="">
-          <Link>Find Jobs</Link>
+          <Link>
+            {" "}
+            <img src={Logo} alt="logo" />
+          </Link>
         </div>
 
         <ul className="flex  ">
