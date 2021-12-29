@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>
-      <nav className="flex justify-between">
+    <div className="pt-6">
+      <nav className="flex justify-between text-white ">
         <div className="">
           <Link>Find Jobs</Link>
         </div>
 
-        <ul className="flex ">
-          <li>Jobs</li>
-          <li>Company Review</li>
-          <li>Find Salaries</li>
-          <li>
+        <ul className="flex  ">
+          <li className="pr-8">Jobs</li>
+          <li className="pr-8">Company Review</li>
+          <li className="pr-8">Find Salaries</li>
+          <li className="">
             <button>Post Job</button>
           </li>
         </ul>
