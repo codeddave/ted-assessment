@@ -30,12 +30,14 @@ const Header = () => {
           <div className="pl-6 py-2 flex items-center">
             <img src={LocationIcon} alt="" className="pr-4" />
             <input
-              className="outline-none text-black"
+              className="outline-none text-black w-full"
               type="text"
               placeholder="Lagos, Nigeria"
             />
 
-            <button className="company-red">Search</button>
+            <button className="company-red-bg px-4 font-extralight tracking-widest py-1 rounded-lg">
+              Search
+            </button>
           </div>
         </div>
       </section>
