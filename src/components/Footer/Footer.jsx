@@ -4,7 +4,7 @@ import Logo from "../../assets/icons/logo.svg";
 const Footer = () => {
   return (
     <footer className="company-blue-bg py-24 ">
-      <section className="grid grid-cols-4 justify-between mx-auto w-4/5 bordr">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-between mx-auto w-4/5 bordr">
         <div>
           <img src={Logo} alt="logo" />
 

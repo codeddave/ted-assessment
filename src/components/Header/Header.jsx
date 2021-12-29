@@ -22,7 +22,7 @@ const Header = () => {
           <div className="py-2 flex items-center">
             <img src={SearchIcon} alt="" className="pr-4" />
             <input
-              className="focus:outline-none text-black "
+              className="focus:outline-none text-black w-full "
               type="text"
               placeholder="Front end developer"
             />
