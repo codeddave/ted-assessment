@@ -14,16 +14,16 @@ const Header = () => {
         </section>
       </div>
 
-      <section className="w-10/12 mx-auto -m-6 bg-white h-12 border rounded px-4 py-2 shadow-lg">
-        <div className="shaunded grid grid-cols-2 divide-x divide-cyan-500">
-          <div>
+      <section className="w-4/5 mx-auto -m-6 bg-white h-16 border rounded px-4  shadow-lg">
+        <div className="shaunded grid grid-cols-2 divide-x divide-cyan-500 my-2.5 ">
+          <div className="py-2">
             <input
               className="focus:outline-none text-black"
               type="text"
               placeholder="Front end developer"
             />
           </div>
-          <div className="pl-6">
+          <div className="pl-6 py-2">
             <input
               className="outline-none text-black"
               type="text"
