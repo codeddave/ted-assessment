@@ -7,7 +7,7 @@ import Twitter from "../../assets/icons/twitter.svg";
 const Footer = () => {
   return (
     <footer className="company-blue-bg py-24 relati ">
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-between mx-auto w-4/5 bordr relat">
+      <section className="grid grid-cols-1 gap-y-6 md:gap-y-0 sm:grid-cols-2 md:grid-cols-4 justify-between mx-auto w-4/5 bordr relat">
         <div>
           <img src={Logo} alt="logo" />
 
@@ -15,7 +15,7 @@ const Footer = () => {
             &copy; 2021 <span>FindJobs</span>
           </p>
         </div>
-        <div>
+        <div /* className="md:pl-4" */>
           <p className="text-xl">Quick Links</p>
           <ul className="pt-3">
             <li>Home</li>
@@ -33,7 +33,7 @@ const Footer = () => {
             <li>Terms and condition</li>
           </ul>
         </div>
-        <div className="flex justify-cent items-center flex-col">
+        <div className="md:flex justify-cent items-center flex-col">
           <p className="text-2xl">Social Media</p>
           <div className="pt-1.5 flex">
             <div className="relative mr-5">
