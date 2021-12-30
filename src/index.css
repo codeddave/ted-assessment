@@ -14,6 +14,9 @@
 .company-blue-text {
   color: var(--company-blue);
 }
+.company-red-text {
+  color: var(--company-red);
+}
 .company-red-bg {
   background-color: var(--company-red);
 }
