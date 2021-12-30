@@ -13,10 +13,10 @@ const AdminNavbar = () => {
             {" "}
             <img src={Logo} alt="logo" />
           </Link>
-          <p>for employers</p>
+          <p className="pl-4 italic font-light">for employers</p>
         </div>
 
-        <ul className="flex  ">
+        <ul className="flex items-center ">
           <li className="pr-8">
             <img src={NotificationBell} alt="notification" />
           </li>
