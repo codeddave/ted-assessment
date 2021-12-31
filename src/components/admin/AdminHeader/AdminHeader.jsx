@@ -3,6 +3,8 @@ import SearchIcon from "../../../assets/icons/search.svg";
 import EllipseOne from "../../../assets/images/ellipse1.svg";
 import EllipseTwo from "../../../assets/images/ellipse2.svg";
 import EllipseThree from "../../../assets/images/ellipse3.svg";
+import PlusIcon from "../../../assets/icons/plus.svg";
+
 import AdminNavbar from "../AdminNavbar/AdminNavbar";
 
 const AdminHeader = () => {
@@ -38,7 +40,7 @@ const AdminHeader = () => {
       </div>
       <section className="w-4/5 mx-auto mt-4 border-black flex flex-grow flex-col">
         <div className="flex justify-between items-baseline text-white">
-          <section className="w-2/5 flex items-center mt-24   relative bg-white h-16 border rounded pl-6 pr-3  shadow-lg">
+          <section className="w-2/5 flex items-center mt-24   relative bg-white h-16 border rounded-lg pl-6 pr-3  shadow-lg">
             <div className="my-2.5 w-full flex items-center justify-between ">
               <div className="py-2 flex items-center  ">
                 <img src={SearchIcon} alt="" className="pr-4" />
@@ -55,6 +57,7 @@ const AdminHeader = () => {
             </div>
           </section>
           <button className="company-red-bg px-4 h-10 font-extralight tracking-widest py-1 rounded-lg">
+            <img src={PlusIcon} alt="" className="inline pr-2" />
             New Job
           </button>
         </div>
