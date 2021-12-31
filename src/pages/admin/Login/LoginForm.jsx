@@ -6,27 +6,13 @@ const LoginForm = () => {
     <div>
       <Formik>
         {() => (
-          <Form className="pt-10">
+          <Form className="dead-center border border-black w-3/4">
+            <Field name="email" title="Email" component={CustomFormInput} />
             <Field
-              name="first_name"
-              title="Job Title"
-              component={CustomFormInput}
-            />
-            <Field
-              name="last_name"
-              title="Company Name"
+              name="password"
+              title="Password"
               component={CustomFormInput}
             />{" "}
-            <Field
-              name="location"
-              title="Location"
-              component={CustomFormInput}
-            />
-            <Field
-              name="phone"
-              title="Phone Number"
-              component={CustomFormInput}
-            />
             <button className="w-full my-11  company-blue-bg text-white py-6 rou">
               Submit Application
             </button>
