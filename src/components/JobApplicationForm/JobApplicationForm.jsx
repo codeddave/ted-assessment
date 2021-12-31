@@ -2,6 +2,7 @@ import { Field, Form, Formik } from "formik";
 import React from "react";
 import CustomFormInput from "../CustomFormInput.jsx/CustomFormInput";
 import LocationIcon from "../../assets/icons/location.svg";
+import UploadIcon from "../../assets/icons/upload.svg";
 
 const JobApplicationForm = () => {
   return (
@@ -48,6 +49,21 @@ const JobApplicationForm = () => {
               title="Phone Number"
               component={CustomFormInput}
             />
+            <div className="company-blue-border mt-11 py-16 border flex flex-col items-center">
+              <img src={UploadIcon} alt="upload" />
+              <p>Drag and drop your CV here</p>
+              <p className="py-2">or </p>
+              <label
+                htmlFor="file"
+                className="company-blue-bg text-white px-10 py-3 rounded-lg"
+              >
+                Browse Files
+              </label>
+              <input type="file" name="file" id="file" className="hidden" />
+            </div>
+            <button className="w-full my-11  company-blue-bg text-white py-6 rou">
+              Submit Application
+            </button>
           </Form>
         )}
       </Formik>
