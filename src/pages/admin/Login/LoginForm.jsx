@@ -19,6 +19,7 @@ const LoginForm = () => {
             <Field
               name="password"
               title="Password"
+              type="password"
               component={CustomFormInput}
             />{" "}
             <button className="w-40 mt-10  company-blue-bg text-white h-16 rounded-lg">
