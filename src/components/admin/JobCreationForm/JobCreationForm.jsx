@@ -20,9 +20,9 @@ const JobCreationForm = ({ closeModal }) => {
         className="right-6 top-8 absolute"
         alt=""
       />
-      <p className="text-2xl mt-6">New Job</p>
+      <p className="text-2xl mt-6 tracking-wider">New Job</p>
       <div className="flex pt-5">
-        <p className="font-light pl-2.5">
+        <p className="font-light pl-2.5 text-sm text-gray-800">
           Kindly provide the required information to get matched with suitable
           candidates
         </p>
@@ -32,19 +32,14 @@ const JobCreationForm = ({ closeModal }) => {
           <Form className="pt-10">
             <Field
               name="first_name"
-              title="First Name"
+              title="Job Title"
               component={CustomFormInput}
             />
             <Field
               name="last_name"
-              title="Last Name"
+              title="Company Name"
               component={CustomFormInput}
             />{" "}
-            <Field
-              name="email"
-              title="Email Address"
-              component={CustomFormInput}
-            />
             <Field
               name="location"
               title="Location"
