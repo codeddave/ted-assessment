@@ -23,6 +23,13 @@
 .company-red-border {
   border-color: var(--company-red);
 }
+.company-blue-border {
+  border-color: var(--company-blue);
+}
 body {
   background-color: #e5e5e5;
+}
+
+.modal-bg-color {
+  background-color: #f9fbfd;
 }
