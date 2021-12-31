@@ -21,7 +21,7 @@ const CustomFormInput = ({
           type={type}
           placeholder={placeholder}
           {...field}
-          className="py-2 mt-3 w-full border company-blue-border rounded pl-2 outline-none text-gray-700"
+          className="py-2 mt-3 w-full thin-border rounded pl-2 outline-none text-gray-700"
         />
         {errors[field.name] && touched[field.name] ? (
           <span className="text-red-700">{errors[field.name]}</span>
