@@ -7,7 +7,7 @@ import PlusIcon from "../../../assets/icons/plus.svg";
 
 import AdminNavbar from "../AdminNavbar/AdminNavbar";
 
-const AdminHeader = () => {
+const AdminHeader = ({ showJobCreationForm }) => {
   return (
     <>
       <div className=" text-white h-72 header-bg relative">
@@ -56,7 +56,10 @@ const AdminHeader = () => {
               </button>
             </div>
           </section>
-          <button className="company-red-bg px-4 h-10 font-extralight tracking-widest py-1 rounded-lg">
+          <button
+            onClick={showJobCreationForm}
+            className="company-red-bg px-4 h-10 font-extralight tracking-widest py-1 rounded-lg"
+          >
             <img src={PlusIcon} alt="" className="inline pr-2" />
             New Job
           </button>
