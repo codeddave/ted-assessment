@@ -3,6 +3,7 @@ import React from "react";
 import CustomFormInput from "../CustomFormInput.jsx/CustomFormInput";
 import LocationIcon from "../../assets/icons/location.svg";
 import UploadIcon from "../../assets/icons/upload.svg";
+import CloseIcon from "../../assets/icons/close.svg";
 
 const JobApplicationForm = () => {
   return (
@@ -13,9 +14,10 @@ const JobApplicationForm = () => {
         left: "50%",
         transform: "translate(-50%, -50%)",
       }}
-      className="modal-bg-color shadow-xl p-6 transform transition-all w-full md:max-w-2xl opacity-100 overflow-x-hidden overflow-y-scroll fixed z-50 tracking-wider company-blue-text scroll"
+      className="modal-bg-color shadow-xl p-6 transform transition-all w-full md:max-w-2xl opacity-100 overflow-x-hidden overflow-y-scroll fixed z-50 tracking-wider company-blue-text scroll "
     >
-      <p className="text-2xl">Front end developer</p>
+      <img src={CloseIcon} className="right-6 top-8 absolute" alt="" />
+      <p className="text-2xl mt-6">Front end developer</p>
       <div className="flex pt-5">
         {" "}
         <img src={LocationIcon} alt="" />
