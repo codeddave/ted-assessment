@@ -6,7 +6,7 @@ import JobApplicationForm from "../../components/JobApplicationForm/JobApplicati
 import JobCard from "../../components/JobCard/JobCard";
 import JobDetails from "../../components/JobDetails/JobDetails";
 const FindJobs = () => {
-  const { toggleOn, onToggleClick } = useToggle();
+  const { toggleOn, onToggleClick, handleClose } = useToggle();
 
   return (
     <div className="text-white">
@@ -21,7 +21,7 @@ const FindJobs = () => {
         <div>
           <JobDetails showApplicationForm={onToggleClick} />
         </div>
-        {toggleOn ? <JobApplicationForm /> : null}
+        {toggleOn ? <JobApplicationForm closeModal={handleClose} /> : null}
       </section>
 
       <Footer />

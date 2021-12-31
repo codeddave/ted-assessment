@@ -5,7 +5,7 @@ import LocationIcon from "../../assets/icons/location.svg";
 import UploadIcon from "../../assets/icons/upload.svg";
 import CloseIcon from "../../assets/icons/close.svg";
 
-const JobApplicationForm = () => {
+const JobApplicationForm = ({ closeModal }) => {
   return (
     <section
       style={{
@@ -16,7 +16,12 @@ const JobApplicationForm = () => {
       }}
       className="modal-bg-color shadow-xl p-6 transform transition-all w-full md:max-w-2xl opacity-100 overflow-x-hidden overflow-y-scroll fixed z-50 tracking-wider company-blue-text scroll "
     >
-      <img src={CloseIcon} className="right-6 top-8 absolute" alt="" />
+      <img
+        onClick={closeModal}
+        src={CloseIcon}
+        className="right-6 top-8 absolute"
+        alt=""
+      />
       <p className="text-2xl mt-6">Front end developer</p>
       <div className="flex pt-5">
         {" "}
