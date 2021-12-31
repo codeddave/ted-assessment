@@ -36,7 +36,7 @@ const AdminHeader = () => {
           </section>
         </section>
       </div>
-      <section className="w-4/5 mx-auto mt-4 border-black">
+      <section className="w-4/5 mx-auto mt-4 border-black flex flex-grow flex-col">
         <div className="flex justify-between items-baseline text-white">
           <section className="w-2/5 flex items-center mt-24   relative bg-white h-16 border rounded pl-6 pr-3  shadow-lg">
             <div className="my-2.5 w-full flex items-center justify-between ">
@@ -58,12 +58,6 @@ const AdminHeader = () => {
             New Job
           </button>
         </div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit autem
-          laborum laboriosam tempore, inventore saepe aliquid fugiat ut?
-          Deserunt quidem tempore distinctio dolorum neque atque laborum
-          exercitationem eos consequuntur quibusdam?
-        </p>
       </section>
     </>
   );

@@ -14,6 +14,9 @@ const AdminFindJobs = () => {
           <p>Filter</p>
         </div>
         <JobRow />
+        <JobRow />
+        <JobRow />
+        <JobRow />
       </section>
       <AdminFooter />
     </div>

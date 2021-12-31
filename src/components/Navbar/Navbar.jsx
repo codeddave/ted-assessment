@@ -18,7 +18,9 @@ const Navbar = () => {
           <li className="pr-8">Company Review</li>
           <li className="pr-8">Find Salaries</li>
           <li className="">
-            <button>Post Job</button>
+            <button className="company-blue-text px-4 bg-white py-1  rounded font-bold">
+              Post Job
+            </button>
           </li>
         </ul>
       </nav>
