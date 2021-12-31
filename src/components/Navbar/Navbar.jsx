@@ -13,7 +13,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul className="flex  ">
+        <ul className="flex items-center ">
           <li className="pr-8">Jobs</li>
           <li className="pr-8">Company Review</li>
           <li className="pr-8">Find Salaries</li>
