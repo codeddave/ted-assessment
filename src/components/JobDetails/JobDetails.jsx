@@ -1,7 +1,7 @@
 import React from "react";
 import LocationIcon from "../../assets/icons/location.svg";
 
-const JobDetails = () => {
+const JobDetails = ({ showApplicationForm }) => {
   return (
     <section className="border shadow-lg rounded-lg h-full bg-white text-gray-700 tracking-widest">
       <div className=" py-6 px-8 ">
@@ -11,7 +11,10 @@ const JobDetails = () => {
 
           <p className="pl-3">Ikeja, Lagos </p>
         </div>
-        <button className="company-blue-bg px-8  font-extralight tracking-widest py-2.5 rounded-lg text-white mt-6">
+        <button
+          onClick={showApplicationForm}
+          className="company-blue-bg px-8  font-extralight tracking-widest py-2.5 rounded-lg text-white mt-6"
+        >
           Apply Via Find Job
         </button>
       </div>
