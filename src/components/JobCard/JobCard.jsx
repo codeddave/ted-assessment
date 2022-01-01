@@ -1,11 +1,11 @@
 import React from "react";
 import LocationIcon from "../../assets/icons/location.svg";
 
-const JobCard = () => {
+const JobCard = ({ title }) => {
   return (
     <article className="company-blue-bg shadow-lg border p-4 mb-6 rounded-lg tracking-wider">
       <div className="flex justify-between">
-        <p className="tracking-wider">Front end developer</p>
+        <p className="tracking-wider">{title}</p>
         <p className="">$2k-$3k</p>
       </div>
       <div className="flex pt-4">
