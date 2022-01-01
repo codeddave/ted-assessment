@@ -1,6 +1,7 @@
 import React from "react";
 import { Field, Form, Formik } from "formik";
 import CustomFormInput from "../../../components/CustomFormInput.jsx/CustomFormInput";
+import { logIn } from "../../../api/admin";
 const LoginForm = () => {
   return (
     <div>
@@ -8,6 +9,11 @@ const LoginForm = () => {
         initialValues={{
           email: "",
           password: "",
+        }}
+        onSubmit={(values) => {
+          console.log(values);
+
+          logIn(values);
         }}
       >
         {() => (
