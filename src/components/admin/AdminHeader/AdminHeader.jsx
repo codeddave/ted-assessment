@@ -40,7 +40,7 @@ const AdminHeader = ({ showJobCreationForm }) => {
       </div>
       <section className="w-4/5 mx-auto mt-4 border-black flex flex-grow flex-col">
         <div className="flex justify-between items-baseline text-white">
-          <section className="w-2/5 flex items-center mt-24   relative bg-white h-16 border rounded-lg pl-6 pr-3  shadow-lg">
+          <section className="max-w-2xl flex items-center mt-24   relative bg-white h-16 border rounded-lg pl-6 pr-3  shadow-lg">
             <div className="my-2.5 w-full flex items-center justify-between ">
               <div className="py-2 flex items-center  ">
                 <img src={SearchIcon} alt="" className="pr-4" />
