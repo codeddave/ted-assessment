@@ -63,7 +63,7 @@ const JobDetails = ({ showApplicationForm, singleJob }) => {
                 Familiarity with mordern front-end build pipelines and tools
               </li>
               <li className="mb-6">
-                Experience with common front-end development tools such as
+                Expergience with common front-end development tools such as
                 Babel, Webpack, NPM e.t.c
               </li>
             </ul>
