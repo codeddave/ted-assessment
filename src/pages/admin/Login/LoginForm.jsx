@@ -2,7 +2,11 @@ import React from "react";
 import { Field, Form, Formik } from "formik";
 import CustomFormInput from "../../../components/CustomFormInput.jsx/CustomFormInput";
 import { logIn } from "../../../api/admin";
+import { useMediaQuery } from "react-responsive";
+import classNames from "classnames";
 const LoginForm = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 678px)" });
+
   return (
     <div>
       <Formik
@@ -17,7 +21,11 @@ const LoginForm = () => {
         }}
       >
         {() => (
-          <Form className="dead-center ack w-3/4">
+          <Form
+            className={classNames("ack w-4/5 mx-auto md:mx-0 sm:w-3/4", {
+              "dead-center": !isMobile,
+            })}
+          >
             <p className="company-blue-text text-4xl  tracking-wider font-extrabold pb-11">
               Login
             </p>
