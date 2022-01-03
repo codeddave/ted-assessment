@@ -39,19 +39,21 @@ const FindJobs = () => {
           <>
             <div>
               {jobs.length ? (
-                jobs.map((job, index) => (
-                  <JobCard
-                    title={job.title}
-                    location={job.location}
-                    job={job}
-                    isFirst={index === 0}
-                    isJobClicked={isJobClicked}
-                    setIsJobClicked={setIsJobClicked}
-                    isFirstItemActive={isFirstItemActive}
-                    handleJobActiveStatus={handleJobActiveStatus}
-                    setSingleJob={setSingleJob}
-                  />
-                ))
+                jobs
+                  .filter((job, idx) => idx < 4)
+                  .map((job, index) => (
+                    <JobCard
+                      title={job.title}
+                      location={job.location}
+                      job={job}
+                      isFirst={index === 0}
+                      isJobClicked={isJobClicked}
+                      setIsJobClicked={setIsJobClicked}
+                      isFirstItemActive={isFirstItemActive}
+                      handleJobActiveStatus={handleJobActiveStatus}
+                      setSingleJob={setSingleJob}
+                    />
+                  ))
               ) : (
                 <Loader />
               )}
