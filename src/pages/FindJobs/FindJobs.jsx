@@ -65,7 +65,7 @@ const FindJobs = () => {
             </div>
           </>
         ) : (
-          <div className="py-12">
+          <div className="py-24">
             <Loader className="dead-center " type="TailSpin" color="#0f4a7b" />
           </div>
         )}
