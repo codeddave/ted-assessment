@@ -21,9 +21,9 @@ const Login = () => {
         )}
       >
         <section
-          className={classNames("w-full borr ", {
+          className={classNames("w-full borr company-blue-bg ", {
             "bent-bg": !isMobile,
-            "company-blue-bg": !isMobile,
+            "": !isMobile,
           })}
         >
           <div className="pl-14 lg:pl-20 pt-8">
@@ -34,7 +34,7 @@ const Login = () => {
             <p className="pl-4 italic font-light text-white">for employers</p>
           </div>
 
-          <h1 className=" pt-8 px-2 md:px-0 md:pt-40 pr-4 font-extrabold text-3xl lg:text-5xl max-w-lg  md:pl-14 lg:pl-20 text-gray-700 md:text-white  text-center">
+          <h1 className=" pt-8 px-2 md:px-0 md:pt-40 pr-4 font-extrabold text-3xl lg:text-5xl max-w-lg  md:pl-14 lg:pl-20 text-white  text-center pb-8 md:pb-0">
             Find the best candidates for your organisation.
           </h1>
 
