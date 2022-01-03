@@ -1,9 +1,16 @@
 import React from "react";
 import LocationIcon from "../../assets/icons/location.svg";
 
-const JobCard = ({ title }) => {
+const JobCard = ({ title, location, job, setSingleJob }) => {
+  const handleJobCardClick = () => {
+    setSingleJob(job);
+  };
+
   return (
-    <article className="company-blue-bg shadow-lg border p-4 mb-6 rounded-lg tracking-wider">
+    <article
+      onClick={handleJobCardClick}
+      className="company-blue-bg shadow-lg border p-4 mb-6 rounded-lg tracking-wider"
+    >
       <div className="flex justify-between">
         <p className="tracking-wider">{title}</p>
         <p className="">$2k-$3k</p>
@@ -11,7 +18,7 @@ const JobCard = ({ title }) => {
       <div className="flex pt-4">
         <img src={LocationIcon} alt="location" />
 
-        <p className="pl-3 font-light">Ikeja, Lagos</p>
+        <p className="pl-3 font-light">{location}</p>
       </div>
       <p className="text-sm pt-4">
         The ideal candidate should be comfortable with the following technology
