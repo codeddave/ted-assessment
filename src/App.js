@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AdminFindJobs from "./pages/admin/AdminFindJobs/AdminFindJobs";
 import Login from "./pages/admin/Login/Login";
 import FindJobs from "./pages/FindJobs/FindJobs";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 function App() {
   return (
