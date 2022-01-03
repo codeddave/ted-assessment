@@ -5,7 +5,7 @@ import { logIn } from "../../../api/admin";
 import { useMediaQuery } from "react-responsive";
 import classNames from "classnames";
 const LoginForm = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 678px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <div>

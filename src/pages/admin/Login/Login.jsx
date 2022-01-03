@@ -13,7 +13,7 @@ const Login = () => {
     <section className="h-screen grid grid-cols-1 md:grid-cols-2">
       <div
         className={classNames(
-          "md:flex border-black  justify-start w-fl d  md:pr-10 ",
+          "md:flex border-black  justify-start  md:pr-10 ",
           {
             "red ": !isMobile,
             "bent-bg": !isMobile,
@@ -21,7 +21,7 @@ const Login = () => {
         )}
       >
         <section
-          className={classNames("w-full borr company-blue-bg ", {
+          className={classNames("w-full company-blue-bg ", {
             "bent-bg": !isMobile,
             "": !isMobile,
           })}
@@ -34,7 +34,7 @@ const Login = () => {
             <p className="pl-4 italic font-light text-white">for employers</p>
           </div>
 
-          <h1 className=" pt-8 px-2 md:px-0 md:pt-40 pr-4 font-extrabold text-3xl lg:text-5xl max-w-lg  md:pl-14 lg:pl-20 text-white  text-center pb-8 md:pb-0">
+          <h1 className=" pt-8 px-2 md:px-0 md:pt-40 pr-4 font-extrabold text-3xl lg:text-5xl md:max-w-lg  md:pl-14 lg:pl-20 text-white  text-center md:text-left pb-8 md:pb-0">
             Find the best candidates for your organisation.
           </h1>
 
