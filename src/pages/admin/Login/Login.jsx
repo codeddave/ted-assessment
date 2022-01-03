@@ -34,7 +34,7 @@ const Login = () => {
             <p className="pl-4 italic font-light text-white">for employers</p>
           </div>
 
-          <h1 className=" pt-8 md:pt-40 pr-4 font-extrabold text-3xl lg:text-5xl max-w-lg pl-14 lg:pl-20 text-gray-700 md:text-white  text-center">
+          <h1 className=" pt-8 px-2 md:px-0 md:pt-40 pr-4 font-extrabold text-3xl lg:text-5xl max-w-lg  md:pl-14 lg:pl-20 text-gray-700 md:text-white  text-center">
             Find the best candidates for your organisation.
           </h1>
 
