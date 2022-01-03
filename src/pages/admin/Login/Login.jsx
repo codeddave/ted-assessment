@@ -7,6 +7,9 @@ import "./Login.css";
 import LoginForm from "./LoginForm";
 import { useMediaQuery } from "react-responsive";
 import classNames from "classnames";
+import EllipseOne from "../../../assets/images/ellipse1.svg";
+import EllipseTwo from "../../../assets/images/ellipse2.svg";
+import EllipseThree from "../../../assets/images/ellipse3.svg";
 const Login = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
@@ -42,8 +45,28 @@ const Login = () => {
         </section>
       </div>
 
-      <section className="relative fle">
+      <section className="relative fle ">
         <LoginForm />
+        <section className="absolute right-0 top-6 hidden md:block">
+          <img
+            src={EllipseOne}
+            alt=""
+            className=""
+            //style={{ width: "50px", height: "50px" }}
+          />
+          <img
+            src={EllipseTwo}
+            alt=""
+            className="-ml-8 pt-2"
+            //style={{ width: "50px", height: "50px" }}
+          />
+          <img
+            src={EllipseThree}
+            alt=""
+            className="-ml-24 pt-2"
+            //style={{ width: "50px", height: "50px" }}
+          />
+        </section>
       </section>
     </section>
   );
