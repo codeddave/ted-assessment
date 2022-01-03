@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loader from "react-loader-spinner";
 import { getJobs } from "../../api/guest";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -22,7 +23,7 @@ const FindJobs = () => {
   }, []);
   console.log(jobs);
 
-  if (!jobs || !singleJob) return <p>loading..</p>;
+  //if (!jobs || !singleJob) return <p>loading..</p>;
   const handleJobActiveStatus = (isFirstItem) => {
     if (isFirstItem) {
       setIsFirstItemActive(true);
@@ -34,30 +35,41 @@ const FindJobs = () => {
     <div className="text-white">
       <Header />
       <section className="grid grid-cols-2 gap-x-6  w-4/5 mx-auto pt-20 relative">
-        <div>
-          {jobs
-            ? jobs.map((job, index) => (
-                <JobCard
-                  title={job.title}
-                  location={job.location}
-                  job={job}
-                  isFirst={index === 0}
-                  isJobClicked={isJobClicked}
-                  setIsJobClicked={setIsJobClicked}
-                  isFirstItemActive={isFirstItemActive}
-                  handleJobActiveStatus={handleJobActiveStatus}
-                  setSingleJob={setSingleJob}
-                />
-              ))
-            : null}
-        </div>
+        {jobs?.length && singleJob ? (
+          <>
+            <div>
+              {jobs.length ? (
+                jobs.map((job, index) => (
+                  <JobCard
+                    title={job.title}
+                    location={job.location}
+                    job={job}
+                    isFirst={index === 0}
+                    isJobClicked={isJobClicked}
+                    setIsJobClicked={setIsJobClicked}
+                    isFirstItemActive={isFirstItemActive}
+                    handleJobActiveStatus={handleJobActiveStatus}
+                    setSingleJob={setSingleJob}
+                  />
+                ))
+              ) : (
+                <Loader />
+              )}
+            </div>
 
-        <div>
-          <JobDetails
-            showApplicationForm={onToggleClick}
-            singleJob={singleJob}
-          />
-        </div>
+            <div>
+              <JobDetails
+                showApplicationForm={onToggleClick}
+                singleJob={singleJob}
+              />
+            </div>
+          </>
+        ) : (
+          <div className="py-12">
+            <Loader className="dead-center " type="TailSpin" color="#0f4a7b" />
+          </div>
+        )}
+
         {toggleOn ? <JobApplicationForm closeModal={handleClose} /> : null}
       </section>
 
