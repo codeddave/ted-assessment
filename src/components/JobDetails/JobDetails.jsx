@@ -1,15 +1,15 @@
 import React from "react";
 import LocationIcon from "../../assets/icons/location.svg";
 
-const JobDetails = ({ showApplicationForm }) => {
+const JobDetails = ({ showApplicationForm, singleJob }) => {
   return (
     <section className="border shadow-lg rounded-lg h-full bg-white text-gray-700 tracking-widest">
       <div className=" py-6 px-8 ">
-        <p className="text-2xl  company-blue-text">Front end developer</p>
+        <p className="text-2xl  company-blue-text">{singleJob.title}</p>
         <div className="flex pt-4 items-center">
           <img src={LocationIcon} alt="location" className="" />
 
-          <p className="pl-3">Ikeja, Lagos </p>
+          <p className="pl-3">{singleJob.location} </p>
         </div>
         <button
           onClick={showApplicationForm}
