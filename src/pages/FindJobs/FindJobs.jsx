@@ -9,25 +9,54 @@ import JobDetails from "../../components/JobDetails/JobDetails";
 const FindJobs = () => {
   const { toggleOn, onToggleClick, handleClose } = useToggle();
   const [jobs, setJobs] = useState(null);
-
+  const [singleJob, setSingleJob] = useState();
+  const [isJobClicked, setIsJobClicked] = useState(false);
+  const [isFirstItemActive, setIsFirstItemActive] = useState(true);
   useEffect(() => {
     const getData = async () => {
       const data = await getJobs();
       setJobs(data);
+      setSingleJob(data[0]);
     };
     getData();
   }, []);
   console.log(jobs);
+
+  if (!jobs || !singleJob) return <p>loading..</p>;
+  const handleJobActiveStatus = (isFirstItem) => {
+    if (isFirstItem) {
+      setIsFirstItemActive(true);
+    } else {
+      setIsFirstItemActive(false);
+    }
+  };
   return (
     <div className="text-white">
       <Header />
       <section className="grid grid-cols-2 gap-x-6  w-4/5 mx-auto pt-20 relative">
         <div>
-          {jobs ? jobs.map((job) => <JobCard title={job.title} />) : null}
+          {jobs
+            ? jobs.map((job, index) => (
+                <JobCard
+                  title={job.title}
+                  location={job.location}
+                  job={job}
+                  isFirst={index === 0}
+                  isJobClicked={isJobClicked}
+                  setIsJobClicked={setIsJobClicked}
+                  isFirstItemActive={isFirstItemActive}
+                  handleJobActiveStatus={handleJobActiveStatus}
+                  setSingleJob={setSingleJob}
+                />
+              ))
+            : null}
         </div>
 
         <div>
-          <JobDetails showApplicationForm={onToggleClick} />
+          <JobDetails
+            showApplicationForm={onToggleClick}
+            singleJob={singleJob}
+          />
         </div>
         {toggleOn ? <JobApplicationForm closeModal={handleClose} /> : null}
       </section>

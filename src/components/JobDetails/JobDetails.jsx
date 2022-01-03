@@ -3,7 +3,7 @@ import LocationIcon from "../../assets/icons/location.svg";
 
 const JobDetails = ({ showApplicationForm, singleJob }) => {
   return (
-    <section className="border shadow-lg rounded-lg h-full bg-white text-gray-700 tracking-widest">
+    <section className="border shadow-lg rounded-lg h-auto bg-white text-gray-700 tracking-widest">
       <div className=" py-6 px-8 ">
         <p className="text-2xl  company-blue-text">{singleJob.title}</p>
         <div className="flex pt-4 items-center">
@@ -21,6 +21,7 @@ const JobDetails = ({ showApplicationForm, singleJob }) => {
 
       <section className="border-t company-red-border text-gray-700">
         <section className="pt-6 px-8 text-sm">
+          <p>{singleJob.description}</p>
           <p>
             In this role, you will be responsible for developing and
             implementing user interface components using React.js concepts and
